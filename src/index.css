@@ -95,3 +95,15 @@ button:focus-visible {
     left: 51px;
   }
 }
+
+.cardHolder{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.extensionCard{
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 2 fr;
+  }
+}
