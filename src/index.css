@@ -66,3 +66,32 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.toggleSwitch{
+  aspect-ratio:  2 / 1;
+  --height: 50px;
+  background-color: #242424;
+  transition: background 0.2s;
+  height: var(--height);
+  border-radius: calc(var(--height)/2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  div{
+    position: absolute;
+    aspect-ratio: 1/1;
+    height: 90%;
+
+    left: 4px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.2s;
+
+  }
+
+  div.active{
+    left: 51px;
+  }
+}
